@@ -1,0 +1,216 @@
+.nalog-wrapper {
+    max-width: 100%;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #fff
+}
+
+.nalog-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid gray
+}
+
+.nalog-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 0 20px
+}
+
+.nalog-top {
+    flex: 0 0 100%;
+    flex-flow: row;
+    align-items: center;
+    display: flex;
+    justify-content: end
+}
+
+.nalog-top div {
+    margin: 10px 50px 0 0;
+    font-weight: 700;
+    font-family: sans-serif
+}
+
+.nalog-left {
+    margin-right: 40px
+}
+
+.nalog-right {
+    margin-left: 20px
+}
+
+.nalog-bottom {
+    flex: 0 0 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    flex-flow: row;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.nalog-bottom div {
+    width: 190px;
+    margin-left: -5px
+}
+
+.nalog-bottom div:nth-child(2) {
+    width: 60px !important
+}
+
+.nalog-column-separator {
+    display: flex;
+    flex: 0;
+    margin: 0
+}
+
+.nalog-first,
+.nalog-third {
+    display: flex;
+    flex-direction: row
+}
+
+.nalog-input {
+    margin-bottom: 10px
+}
+
+.nalog-input span {
+    margin-bottom: 2px;
+    display: block
+}
+
+.nalog-input.nalog-large div {
+    max-width: 100%;
+    padding: 5px;
+    height: auto;
+    max-height: 80px;
+    width: 100%;
+    border: 1px solid #000;
+    text-align: left;
+    white-space: pre-wrap;
+    max-width: 500px;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.nalog-input.nalog-small div {
+    font-size: 14px;
+    line-height: 1.5;
+    height: 25px;
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center
+}
+
+.nalog-first div:last-child .nalog-input div,
+.nalog-second .nalog-input div,
+.nalog-third div:last-child .nalog-input div {
+    text-align: left !important;
+    padding-left: 5px
+}
+
+.nalog-line {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    width: 60%
+}
+
+.nalog-column-separator>div {
+    background: #000;
+    width: 1px;
+    margin-top: 20px;
+    height: 77%
+}
+
+.nalog-first>div,
+.nalog-second>div,
+.nalog-third>div {
+    margin: 0 10px;
+    flex: 1
+}
+
+.nalog-first>div:last-child {
+    flex: 5
+}
+
+.nalog-third>div {
+    margin: 0 10px;
+    flex: 1
+}
+
+.nalog-third>div:last-child {
+    flex: 7
+}
+
+.label {
+    margin: 10px 10px 5px
+}
+
+.nalog-qr {
+    text-align: right;
+    padding: 10px 10px 0 0
+}
+
+.nalog-qr .qr_kod {
+    height: 100px
+}
+
+@media only screen and (max-width: 1200px) {
+    .nalog-wrapper {
+        max-width: 95%;
+        margin: 15px auto
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nalog-input.nalog-large div {
+        max-width: 100%
+    }
+
+    .nalog-row {
+        flex-direction: column
+    }
+
+    .nalog-top {
+        justify-content: center
+    }
+
+    .nalog-top div {
+        margin: 20px auto 10px
+    }
+
+    .nalog-line {
+        width: 100%;
+        text-align: center
+    }
+
+    .nalog-bottom {
+        flex-direction: column
+    }
+
+    .nalog-left {
+        margin: 0 10px
+    }
+
+    .nalog-right {
+        margin: 0
+    }
+
+    .nalog-bottom div {
+        width: 100%;
+        text-align: center
+    }
+
+    .nalog-qr {
+        text-align: center;
+        padding: 10px 0
+    }
+}
